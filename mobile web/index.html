@@ -7,6 +7,21 @@
     <title>CellSwift</title>
   </head>
   <body>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyBHz65IZ11GEAgSFRdf0icaeGlck1Lbto4",
+        authDomain: "cellswift.firebaseapp.com",
+        projectId: "cellswift",
+        storageBucket: "cellswift.appspot.com",
+        messagingSenderId: "296910947956",
+        appId: "1:296910947956:web:86d3a52b03420ed85e3321",
+        measurementId: "G-2BGWQVQF5N"
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
     <section id="header">
       <a href="#"><img src="image/logo.png" class="logo" alt="" /></a>
 
